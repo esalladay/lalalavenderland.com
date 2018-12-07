@@ -1,0 +1,1081 @@
+/** === === GOOGLE FONTS === === */
+
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes); 
+@import url(https://fonts.googleapis.com/css?family=Quicksand); 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,500,600,700);
+
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { 
+  overflow-y: scroll; }
+
+
+body { 
+  font-family: Montserrat, sans-serif;
+  background-color:#FAFAFA;
+  color:#FAFAFA;
+}
+
+img:hover{
+  transform: scale(1.025);
+}
+/* ---- grid ---- */
+
+.grid {
+/*   background: #DDD; */
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 5px;
+}
+
+.contact{
+  font-size: 0.9em;
+  padding: 15px;
+  text-align: center;
+ 
+}
+
+/* mainpage styles */
+
+/** === === RESETS === === */
+
+* {
+		-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
+		margin: 0;
+    padding: 0;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
+    display: block;
+}
+
+audio[controls],canvas,video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.pic-journeylogo img{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+body,html {
+    height: 100%
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+a.no-action-link {
+    cursor: default;
+}
+
+a {
+	color: #FFF;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p a,p a:visited {
+    line-height: inherit;
+}
+
+hr {
+    border: solid #ddd;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 22px 0 21px;
+    height: 0;
+}
+
+em,i {
+    font-style: italic;
+    line-height: inherit;
+}
+
+strong,b {
+    font-weight: bold;
+    line-height: inherit;
+}
+
+small {
+    font-size: 60%;
+    line-height: inherit;
+}
+
+code {
+    font-weight: bold;
+    background: #ffff99;
+}
+
+ul,ol {
+    margin-bottom: 17px;
+    list-style-position: inside;
+}
+
+
+/** === === ANIMATIONS === === */
+
+@-webkit-keyframes intro-animation { 
+		0% { background-position: 0 60px; }
+    50% { background-position: -3850px 60px; } 
+    100% { background-position: -3850px 60px; } 
+}
+
+@-moz-keyframes intro-animation { 
+		0% { background-position: 0 60px; }
+		50% { background-position: -3850px 60px; } 
+		100% { background-position: -3850px 60px; } 
+}
+
+@keyframes intro-animation {
+		0% { background-position: 0 60px; }
+		50% { background-position: -3850px 60px; } 
+		100% { background-position: -3850px 60px; } 
+}
+
+
+/** === === GLOBAL === === */
+
+body {
+		font-family: 'Open Sans',Verdana,Geneva,sans-serif;
+    line-height: 1.250em;
+    webkit-font-smoothing: antialiased;	
+  	background-color: #000;
+  	height: 100%;
+  	width: 100%;
+}
+
+div.container-main {
+  	height: auto;
+  	width: 100%;
+  	padding:20px;
+		
+}
+
+div.box-text{
+	
+	height: auto;
+	padding-top: 75px;
+  padding-bottom: 20px;
+  background-image: url(/assets/images/frame.png);
+	background-repeat: no-repeat;
+	background-color: black;
+}
+.intro-text p{
+	width: 70%;
+	color: #FAFAFA;
+	background-color: black;
+	padding: 30px;
+	margin: auto;
+}
+
+
+div.container-main h1 {
+  	margin: 20px 0;
+  	color: #000;
+  	display:none;
+}
+
+
+/** === === INTRO ANIMATION === === */
+
+div.container-introanimation {
+  	width: 100%;
+  	height: 100%;
+  	background-color: #000;
+}
+
+div.animation-intro {
+  	width: 350px;
+  	height: 100px;
+  	text-align: center;
+  	background-position: 0 60px;
+  	background-repeat: no-repeat;
+  	-webkit-animation: intro-animation 3s 2s steps(11,end) infinite;
+  	-moz-animation: intro-animation 3s 2s steps(11,end) infinite;
+  	-ms-animation: intro-animation 3s 2s steps(11,end) infinite;
+  	-os-animation: intro-animation 3s 2s steps(11,end) infinite;
+  	animation: intro-animation 3s 2s steps(11,end) infinite;
+  	position: absolute;
+  	left: 50%;
+  	top: 50%; 
+  	margin-left: -175px;
+  	margin-top: -50px;
+}
+
+
+
+/** === === HEADER === === */
+
+header {
+  	background-color: #000;
+  	width: 100%;
+  	min-height: 100px;
+  	margin-bottom: 50px;
+	
+}
+
+/* button credit: https://codepen.io/dipscom/pen/MvxwMo?editors=1100 */
+
+/* Button reset styling */
+header a.pic-journeylogo {
+  	width: auto;
+  	height: auto;
+  	margin:0 auto 20px auto;
+  	text-indent: 25px;
+		
+}
+
+img{
+		width:25%;
+		height:25%;
+}
+
+header h1.text-welcomemsg {
+  	color:#DDD;
+	  font-family: 'Great Vibes', cursive;
+  	font-size: 3em;
+/*   	font-style: italic;
+  	font-weight: 700; */
+  	width: 94%;
+  	margin:0 auto;
+	padding-top: 0px;	
+	padding-left: 10px;
+	line-height: 1.5em;
+}
+
+h1.text-welcomemsg {
+	font-size: 3.5em !important;
+	position: relative !important;
+	top: 40px !important;
+	margin-left: 50px auto !important;
+		}
+
+
+
+/** === === MAIN MENU === === */
+
+.nav-mainmenu ul {
+  	margin:0;
+  	height:30px;
+}
+
+.nav-mainmenu li {
+  	list-style: none;
+  	width:30.33%;
+  	float:left;
+  	margin-right:3%;
+		position: relative;
+}
+
+.nav-mainmenu li:after {
+		width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    top: 60px;
+    right: 40%;
+    position: absolute;
+    content: "";
+    z-index: 999;
+}
+
+.nav-mainmenu li.selected:after {
+  	border-top: 10px solid #222;
+}
+
+.nav-mainmenu li.selected a span {
+  	color:#F05A21;
+}
+
+.nav-mainmenu li a:hover span {
+  	color:#68439A;
+}
+
+.nav-mainmenu hr {
+  	width: 25%;
+  	border-color: #999;
+  	clear: none;
+  	margin: 10px 0 0 0;
+  	height: 10px;
+		display:none;
+}
+
+.nav-mainmenu hr.icon-lineleft {
+  	float: left;
+  	text-align:right;
+}
+
+.nav-mainmenu hr.icon-lineright {
+  	float: right;
+  	text-align:left;
+}
+
+.nav-mainmenu span.text-menusubtitle {
+  	text-align: center;
+		font-style: italic;
+		font-weight: 100;
+		color:#FFF;
+  	text-transform: uppercase;
+  	display: block;
+}
+
+.nav-mainmenu span.text-menutitle {
+  	clear: both;
+  	font-weight: 700;
+  	color:#FFF;
+  	text-transform: uppercase;
+  	display:block;
+  	width:100%;
+  	text-align:center;
+}
+
+ 
+
+/** === === HOMEPAGE === === */
+
+div.container-home {
+		padding:0;
+}
+
+
+div.container-home .nav-mainmenu hr {
+ 	 display:block;
+}
+
+div.container-home .nav-mainmenu li {
+		width: 100%;
+  	height: 130px;
+  	border-bottom: 1px solid #2C2A29;
+  	float: none;
+  	margin-right: 0;
+}
+
+div.container-home .nav-mainmenu li a {
+  	display: block;
+  	width: 70%;
+  	height: 100px;
+  	margin: 50px auto 0 auto;
+}
+
+div.container-home .nav-mainmenu span.text-menusubtitle {
+  	font-size: 1.875em;
+  	height: 45px;
+  	width: 50%;
+  	float: left;
+}
+
+div.container-home .nav-mainmenu span.text-menutitle {
+  	font-size: 3.125em;
+}
+
+@media screen and (max-width: 62em){
+	header h1.text-welcomemsg {
+  	color:#DDD;
+		font-family: 'Great Vibes', cursive;
+  	font-size: 1.8em;
+		text-align: center;
+  	width: 94%;
+  	margin:0 auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		line-height: 1.5em;
+}
+	
+	li{
+	  margin: 0px;
+    padding: 0;
+    list-style: none;
+}
+	
+	.conclusion-text p{
+	width: 90%;
+	color: black;
+	background-color: white;
+	padding: 30px;
+	margin: auto;
+	position: relative;
+	top: 300px;
+}
+  
+  
+button{
+	border: none;
+	color: hsl(0,100%,100%);
+	background: none;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+subnav ul li button{
+	border-width: 15px 12px;
+	border-style: solid;
+	border-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1488101/fancy_border.svg') round;
+	border-image-slice: 30.434782608695652% 10.990185387131952% fill;
+	padding: 4px 8px;
+	margin: auto;
+}
+
+
+subnav ul{
+	display: flex;
+	justify-content: center;
+}
+	
+/** === === GLOBAL STYLES === === */
+		
+		li{
+	  margin: 10px;
+    padding: 0;
+    list-style: none;
+}
+	
+
+}
+
+	@media screen and (min-width: 62em) {
+
+button{
+	border: none;
+	color: hsl(0,100%,100%);
+	background: none;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+subnav ul li button{
+	border-width: 15px 12px;
+	border-style: solid;
+	border-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1488101/fancy_border.svg') round;
+	border-image-slice: 30.434782608695652% 10.990185387131952% fill;
+	padding: 4px 8px;
+	margin: auto;
+}
+
+
+subnav ul{
+	display: flex;
+	justify-content: center;
+}
+	
+/** === === GLOBAL STYLES === === */
+		
+		li{
+	  margin: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+		background: #000;
+}
+
+div.container-main {
+  	overflow: hidden;
+  	padding: 100px 0 0 50px;
+  	background-color: #333;
+	
+}
+
+div.container-main.container-ourjourney {
+  	background-color: #333;
+}
+
+ul.nav-sidebarmenu {
+  	width: 15%;
+  	height:100%;
+  	float:left;
+  	padding-top:5%;
+}
+
+div.container-content {
+  	width: 85%;
+  	float:right;
+  	overflow:auto;
+  	height:100%;
+}
+
+div.container-content::-webkit-scrollbar-thumb   { background-color:#F35908; } 
+div.container-content::-webkit-scrollbar-track   { background-color:#444; }
+
+
+
+/** === === HEADER === === */
+
+header {
+  	width: 100%;
+		height: 100%;
+  	padding-top: 12px;
+		padding-left: 10px;
+		padding-bottom:-110px;
+  	position: relative;
+		margin-bottom: 0px;
+}
+	
+	img {
+		width:10%;
+		height:10%;
+		float: left;
+		margin: auto;
+	}
+
+header p.text-welcomemsg {
+  	margin:20px 0 0 2%;
+  	float: left;
+  	font-size: 1em;
+  	line-height: 1.4em;
+  	opacity: 0;
+}
+	
+		button{
+		position: relative;
+		top: -90px;
+		
+		
+	}
+	subnav ul {
+		display: flex;
+		justify-content: flex-end;
+		padding: 5px;
+		margin: 5px;
+		height: 0px;
+	}
+
+.header-homepage {
+  	opacity: 0;
+  	width: 1px;
+  	-webkit-transition: width 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  	-moz-transition: width 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  	-ms-transition: width 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+		-o-transition: width1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  	transition: width 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.header-homepage .pic-journeylogo {
+  	-webkit-transform: translateX(15px) ;
+  	-moz-transform: translateX(15px) ;
+  	-ms-transform: translateX(15px) ;
+  	-o-transform: translateX(15px) ;
+		transform: translateX(15px);
+		-webkit-transition: -webkit-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+		-moz-transition: -moz-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+		-ms-transition: -ms-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+		-o-transition: -o-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+		transition: transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+		opacity: 0;
+}
+
+.header-homepage .text-welcomemsg {
+		-webkit-transform: translateX(15px) ;
+		-moz-transform: translateX(15px) ;
+		-ms-transform: translateX(15px) ;
+		-o-transform: translateX(15px) ;
+		transform: translateX(15px);
+		-webkit-transition: -webkit-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+		-moz-transition: -moz-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+		-ms-transition: -ms-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+		-o-transition: -o-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+		transition: transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+		opacity: 0;
+}
+
+.header-homepage.animate-header {
+		width: 100%;
+		opacity: 1;
+}
+
+.header-homepage .animate-header-elements {
+  	-webkit-transform: translateX(0px) ;
+  	-moz-transform: translateX(0px) ;
+  	-ms-transform: translateX(0px) ;
+  	-o-transform: translateX(0px) ;
+  	transform: translateX(0px);
+  	opacity: 1;
+}
+
+:root .header-homepage .pic-journeylogo, :root .header-homepage .text-welcomemsg, :root .header-homepage .pic-leologo {
+  -ms-transform: translateX(0px) \0/IE9;
+  opacity: 1 \0/IE9;
+}
+
+:root .header-homepage {
+    width: 100% \0/IE9;
+}
+
+
+/** === === MAIN MENU === === */
+
+.nav-mainmenu {
+  	width:52%;
+  	float:left;
+}
+
+.nav-mainmenu ul {
+  	margin-top:26px;
+}
+
+.nav-mainmenu ul li {
+  	width:23%;
+  	margin-right:0;
+  	margin-left:8%;
+}
+
+.nav-mainmenu li:after {
+  	top: 73px;
+  	left:30%;
+  	border-left: 25px solid transparent;
+  	border-right: 25px solid transparent;
+}
+
+
+.nav-mainmenu li.selected:after{
+   border-top: 15px solid #222;
+}
+
+
+.nav-mainmenu hr{
+  display:block;
+}
+
+.nav-mainmenu span.text-menusubtitle{
+  width: 50%;
+  float: left;
+  font-size:1em;
+  height:25px;
+}
+
+.nav-mainmenu span.text-menutitle{
+  font-size:1.563em;
+}
+ 
+
+/** === === HOMEPAGE === === */
+
+div.container-home{
+  padding:0px 0 0 0;
+}
+
+div.container-home .nav-mainmenu, div.container-home .nav-mainmenu ul{
+  height: 100%;
+  width:100%;
+  margin-top: -10px;
+  float: none;
+  clear: both;
+}
+
+div.container-home .nav-mainmenu li{
+  width: 50%;
+  height:100%;
+  border-bottom:none;
+  float: left;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-left: 0;
+}
+
+
+
+div.container-home .nav-mainmenu li a{
+  width: 75%;
+  height: 100%;
+  margin:0 auto;
+  padding-top: 20%;
+  text-shadow: 2px 2px 2px #000;
+  cursor: default;
+}
+
+.nav-mainmenu li a:hover span{
+  color:#FFF;
+}
+
+div.container-home .nav-mainmenu li.btn-ourjourney{
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1488101/lavender_bee_2_copy.jpg);
+	
+}
+
+div.container-home .nav-mainmenu li.btn-ourshop{
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1488101/lavender_bee_2_copy.jpg);
+}
+
+
+div.container-home .nav-mainmenu li.btn-blog{
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1488101/lavender_bee_2_copy.jpg);
+}
+
+		.conclusion-text p{
+	width: 90%;
+	color: black;
+	background-color: white;
+	padding: 30px;
+	margin: auto;
+	position: relative;
+	top: 20px;
+}
+
+p.poem{
+	font-size:0.125em;
+}
+
+.poem:hover{
+	font-size:1em;
+}
+
+div.container-home .nav-mainmenu li{
+  -webkit-transform: scale(.95);
+  -moz-transform: scale(.95);
+  -ms-transform: scale(.95);
+  -o-transform: scale(.95);
+  transform: scale(.95);
+  -webkit-transition: -webkit-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 2500ms cubic-bezier(0.165, 0.84, 0.44, 1), background 2500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: -moz-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 2500ms cubic-bezier(0.165, 0.84, 0.44, 1), background 2500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: -ms-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 2500ms cubic-bezier(0.165, 0.84, 0.44, 1), background 2500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: -o-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 2500ms cubic-bezier(0.165, 0.84, 0.44, 1), background 2500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 2500ms cubic-bezier(0.165, 0.84, 0.44, 1), background 2500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+}
+
+div.container-home .nav-mainmenu hr{
+  -webkit-transition: -webkit-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: -moz-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: -ms-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: -o-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+}
+
+div.container-home .nav-mainmenu hr.icon-lineleft{
+  -webkit-transform: translateX(-25px) ;
+  -moz-transform: translateX(-25px) ;
+  -ms-transform: translateX(-25px) ;
+  -o-transform: translateX(-25px) ;
+  transform: translateX(-25px);
+}
+
+div.container-home .nav-mainmenu hr.icon-lineright{
+  -webkit-transform: translateX(25px) ;
+  -moz-transform: translateX(25px) ;
+  -ms-transform: translateX(25px) ;
+  -o-transform: translateX(25px) ;
+  transform: translateX(25px);
+}
+
+
+div.container-home .nav-mainmenu span.text-menusubtitle{
+  -webkit-transform: translateY(-15px) ;
+  -moz-transform: translateY(-15px) ;
+  -ms-transform: translateY(-15px) ;
+  -o-transform:translateY(-15px) ;
+  transform: translateY(-15px) ;
+  -webkit-transition: -webkit-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: -moz-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: -ms-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: -o-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+}
+
+div.container-home .nav-mainmenu span.text-menutitle{
+  -webkit-transform: translateY(15px) ;
+  -moz-transform: translateY(15px) ;
+  -ms-transform: translateY(15px) ;
+  -o-transform:translateY(15px) ;
+  transform: translateY(15px) ;
+  -webkit-transition: -webkit-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: -moz-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: -ms-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: -o-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+}
+
+
+div.container-home .nav-mainmenu li.animate-menu{
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+div.container-home .nav-mainmenu li.animate-menu a{
+  -webkit-transition: -webkit-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), text-shadow 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: -moz-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), text-shadow 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: -ms-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), text-shadow 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: -o-transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), text-shadow 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 1300ms cubic-bezier(0.165, 0.84, 0.44, 1), text-shadow 1300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+div.container-home .nav-mainmenu span.animate-menusubtitle{
+  -webkit-transform: translateY(0px) ;
+  -moz-transform: translateY(0px) ;
+  -ms-transform: translateY(0px) ;
+  -o-transform:translateY(0px) ;
+  transform: translateY(0px) ;
+  opacity: 1;
+}
+
+div.container-home .nav-mainmenu span.animate-menutitle{
+  -webkit-transform: translateY(0px) ;
+  -moz-transform: translateY(0px) ;
+  -ms-transform: translateY(0px) ;
+  -o-transform:translateY(0px) ;
+  transform: translateY(0px) ;
+  opacity: 1;
+}
+
+
+
+div.container-home .nav-mainmenu li hr.animate-hr{
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform:translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+div.container-home .nav-mainmenu li a.animate-links{
+  cursor: pointer;
+}
+
+
+div.container-home .nav-mainmenu li.btn-ourjourney:hover, li.btn-blog:hover, li.btn-ourshop:hover, div.grid-tem:hover{
+  background: none #68439A;
+}
+	
+/* div.container-home .nav-mainmenu li.btn-ourshop:hover{
+  background: none #68439A;
+}
+
+div.container-home .nav-mainmenu li.btn-blog:hover{
+  background: none #68439A; */
+}
+	
+div.container-home .nav-mainmenu li.animate-menu:hover a{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  text-shadow:none;
+}
+
+div.container-home .nav-mainmenu li.animate-menu:hover a span{
+  color:#FFF;
+}
+
+:root div.container-home .nav-mainmenu span.text-menutitle, :root div.container-home .nav-mainmenu span.text-menusubtitle, :root div.container-home .nav-mainmenu hr, :root div.container-home .nav-mainmenu li {
+  opacity: 1 \0/IE9;
+}
+
+:root div.container-home .nav-mainmenu li {
+  -ms-transform: scale(1) \0/IE9;
+}
+
+:root div.container-home .nav-mainmenu span.text-menutitle, :root div.container-home .nav-mainmenu span.text-menusubtitle{
+-ms-transform: translateY(0px) \0/IE9;
+}
+
+:root div.container-home .nav-mainmenu li hr.animate-hr{
+-ms-transform: translateX(0px) \0/IE9;
+}
+
+:root div.container-home .nav-mainmenu li a{
+  cursor: pointer \0/IE9;
+}
+
+}
+
+
+
+@media screen and (min-width: 80em) {
+  
+  
+/** === === GLOBAL STYLES === === */
+
+
+div.container-content{
+  width: 88%;
+}
+
+
+/** === === HEADER === === */
+
+header a.pic-journeylogo{
+  width: 22%;
+}
+
+header p.text-welcomemsg{
+  width: 60%;
+  margin-top:20px;
+  font-size:.875em;
+}
+
+header a.pic-leologo{
+  width: 16%;
+}
+
+
+/** === === MAIN MENU === === */
+
+.nav-mainmenu{
+  width:60%;
+}
+
+.nav-mainmenu span.text-menusubtitle{
+  font-size:1.125em;
+}
+
+.nav-mainmenu span.text-menutitle{
+  font-size:1.875em;
+}
+
+
+.nav-mainmenu ul li{
+  width:20%;
+  margin-left:11%;
+}
+
+
+}
+
+@media screen and (min-width: 90em) {
+
+
+/** === === HEADER === === */
+
+header a.pic-journeylogo{
+  width: 20%;
+}
+
+header p.text-welcomemsg{
+  width: 63%;
+}
+
+header a.pic-leologo{
+  width: 15%;
+}
+
+
+/** === === MAIN MENU === === */
+
+.nav-mainmenu{
+  width:63%;
+}
+
+}
+
+
+
+@media screen and (min-width:100em) and (min-height:50em) {
+
+/** === === GLOBAL STYLES === === */
+
+div.container-content{
+  width: 90%;
+}
+
+
+/** === === HEADER === === */
+
+header a.pic-journeylogo{
+  width: 17%;
+}
+
+header p.text-welcomemsg{
+  width: 66%;
+  font-size:1em;
+  line-height:1.2em;
+}
+
+header a.pic-leologo{
+  width: 14%;
+}
+
+
+/** === === MAIN MENU === === */
+
+.nav-mainmenu{
+  width:66%;
+}
+
+.nav-mainmenu ul li{
+  width:14%;
+  margin-left:15%;
+}
+
+
+/** === === HOMEPAGE === === */
+
+div.container-home .nav-mainmenu li a{
+  width: 60%;
+  font-size:1.3em;
+  margin-top:50px;
+}
+
+}

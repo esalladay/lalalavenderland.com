@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/imagesloaded.pkgd.js"></script>
+    <script type="text/javascript" src="/assets/js/masonry.pkgd.js"></script>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff"> 
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+            <section>
+              <header class="header-homepage">  
+              <a class="pic-journeylogo" href="index.html"><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1488101/fairyonmoonlogo-06.png' alt=''></a>
+              <h1 class="text-welcomemsg">La La Lavenderland</h1>
+                <subnav>
+                  <ul>
+                    <li><a href="/shop.html"><button>Shop</button></a></li>
+                    <li><a href="#contact"><button>Contact</button></a></li>
+                    <li><a href="/blog.html"></a><button>Blog</button></a></li>
+                  </ul>
+                </subnav>
+            </header>
+        </section>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    {% include analytics.html %}
+
+    <!-- footer -->
+
+    <section>
+        <div id="contact" class="conclusion-text">
+            <h5>Have a query? Ask a fairy!</h5>
+            <p>
+              We are excited to share our products with you. Email us at lalalavenderland@gmail.com and we will be happy to answer your questions.   
+            </p>
+
+            <p class="is-size-7 has-text-weight-light poem">May your troubles be less,<br>
+            And your blessings be more.<br>
+            And nothing but happiness,<br>
+            Come through your door.</p>
+            
+              <p> <span id="foot">&#9400;lalalavenderland 2018. All rights reserved.</span></p>
+            </div>
+          </section>
+
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+  </body>
+</html>

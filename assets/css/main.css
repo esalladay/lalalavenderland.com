@@ -85,8 +85,8 @@ p a,p a:visited {
 }
 
 hr {
-    border: solid #ddd;
-    border-width: 1px 0 0;
+    border: solid #212121;
+    border-width: 2px 0 0;
     clear: both;
     margin: 22px 0 21px;
     height: 0;
@@ -286,7 +286,7 @@ h1.text-welcomemsg {
 }
 
 .nav-mainmenu li.selected a span {
-  	color:#F05A21;
+  	color:#02ff80;
 }
 
 .nav-mainmenu li a:hover span {
@@ -295,7 +295,7 @@ h1.text-welcomemsg {
 
 .nav-mainmenu hr {
   	width: 25%;
-  	border-color: #999;
+  	border-color: #212121;
   	clear: none;
   	margin: 10px 0 0 0;
   	height: 10px;
@@ -313,10 +313,11 @@ h1.text-welcomemsg {
 }
 
 .nav-mainmenu span.text-menusubtitle {
+		font-family: 'Great Vibes';
   	text-align: center;
 		font-style: italic;
 		font-weight: 100;
-		color:#FFF;
+		color:#212121;
   	text-transform: uppercase;
   	display: block;
 }
@@ -324,7 +325,7 @@ h1.text-welcomemsg {
 .nav-mainmenu span.text-menutitle {
   	clear: both;
   	font-weight: 700;
-  	color:#FFF;
+  	color:#212121;
   	text-transform: uppercase;
   	display:block;
   	width:100%;
@@ -693,12 +694,12 @@ div.container-home .nav-mainmenu li a{
   height: 100%;
   margin:0 auto;
   padding-top: 20%;
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: 2px 2px 2px #02ff80;
   cursor: default;
 }
 
 .nav-mainmenu li a:hover span{
-  color:#FFF;
+  color:#212121;
 }
 
 div.container-home .nav-mainmenu li.btn-ourjourney{
@@ -881,7 +882,7 @@ div.container-home .nav-mainmenu li.animate-menu:hover a{
 }
 
 div.container-home .nav-mainmenu li.animate-menu:hover a span{
-  color:#FFF;
+  color:#212121;
 }
 
 :root div.container-home .nav-mainmenu span.text-menutitle, :root div.container-home .nav-mainmenu span.text-menusubtitle, :root div.container-home .nav-mainmenu hr, :root div.container-home .nav-mainmenu li {
